@@ -1,0 +1,197 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  max-width: 2000px;
+}
+
+*{
+  box-sizing: border-box;
+},
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.header{
+  background-color: rgb(255, 255, 255);
+  justify-items: center;
+  align-items: center;
+}
+
+.header-box{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.photo-box{
+  width: 150px;
+}
+
+.photo {
+ max-width: 100%;
+ height: auto;
+ border-radius: 2%;
+}
+
+.text-box{
+  text-align: center;
+}
+
+.headline-header{
+  color:rgb(59, 56, 57);
+  font-style: italic;
+}
+
+.header-text{
+  color:rgb(59, 56, 57);
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.container{
+  background: url(https://images.wallpaperscraft.ru/image/ugol_treugolnik_zheltyj_125410_1280x720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;  
+}
+
+.section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto 50px;
+  justify-content: space-around;
+  align-self: center;
+  padding: 100px;
+}
+
+.icons-box{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 200px;
+  border: 2px solid #fdf2f2;
+  box-shadow: 0 0 5px black;
+  transition: 1s;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 50px;
+}
+
+.icons-box:hover{
+transform: scale(1.2);
+}
+
+.image-box{
+  margin: 20px 10px;
+  width: 120px;
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project{
+  width: 700px;
+  font-size: 20px;
+  margin: 20px 20px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.text-project{
+  display:flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.navigation{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(31, 20, 20);
+}
+
+.text-footer{
+  color: rgb(22, 22, 20);
+}
+
+.copyright-footer{
+  display: flex;
+  align-items: center;
+}
+
+.text-copyright{
+color:rgb(22, 22, 20);
+}
+
+a.nav-link{
+  text-decoration: none;
+}
+
+@media (max-width: 1000px), (orienation: portrait) {
+.section{
+  margin: auto 20px;
+  padding:30px;
+}
+
+.icons-box:hover{
+    transform: scale(1.2);
+    }
+
+@media (max-width: 450px){
+  .section{
+    margin: auto;
+  }
+
+  .project{
+    margin:20px auto;
+  }
+
+  .icons-box:hover{
+      transform: scale(1.2);
+      }
+
+  .icons-box{
+  margin: 30px auto;
+  }
+
+  .text-project{
+    font-size: 30px;
+    text-align: justify;
+  }
+
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-box{
+    margin: 10px 20px;
+    font-size: 20px;
+  }
+  .header-text{
+    font-size: 25px;
+    text-align: justify;
+  }
+  .text-footer{
+    font-size: 25px;
+  }
+}
